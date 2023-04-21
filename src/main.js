@@ -1,19 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-// 引入vue-router
-import VueRouter from 'vue-router'
-// 引入路由器管理配置
-import router from "./router/index";
+// 引入element-ui组件库
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
-// 应用路由器
-Vue.use(VueRouter)
+// 应用element-ui
+Vue.use(ElementUI)
 
 new Vue({
   render: h => h(App),
-  router:router
 }).$mount('#app')
-
-// vue-router
-// 1.安装vue-router路由     npm install vue-router@3
-// 2.在src目录下创建router文件夹，创建index.js
